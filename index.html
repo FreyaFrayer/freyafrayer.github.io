@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jinglan Cao — robotics, motion planning, and embodied AI.">
+  <title>Jinglan Cao</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <section class="intro" aria-label="Introduction">
+      <div class="intro-copy">
+        <h1>Jinglan Cao <span>(Freya)</span></h1>
+        <p>I am currently pursuing an M.S. in Electronic Information at <a href="https://english.hust.edu.cn/" target="_blank" rel="noreferrer">Huazhong University of Science and Technology (HUST)</a>, advised by Guohui Zhong and Chengwei Zhang.</p>
+
+        <p>Before beginning my master’s degree, I earned my bachelor’s degree in the Qiming Experimental Class (Seed Class) at <a href="http://english.eic.hust.edu.cn/" target="_blank" rel="noreferrer">HUST’s School of Electronic Information and Communications</a>. During my undergraduate studies, I was also a member of <a href="https://dian.org.cn/" target="_blank" rel="noreferrer">Dian Group</a>, where I worked with Yayu Gao. I also spent a summer as a visiting student working with Boyd Anderson’s robotics group at the National University of Singapore.</p>
+
+        <p>My research goal is to enable robot arms to move more efficiently and reliably in uncertain, real-world environments, for example, making better use of their redundant degrees of freedom. I value systems that are both simple and effective. In particular, I am interested in foundational algorithms and abstractions. I sometimes arrive at perspectives that are uniquely my own, and these insights have helped me discover the distinctive joy of research.</p>
+
+        <p>In the long term, I hope to design and build small robots that address practical problems in daily life.</p>
+        </div>
+      <div class="intro-side">
+        <div class="portrait-frame">
+          <img src="assets/profile.jpg" alt="Jinglan Cao with a Minion figure">
+        </div>
+        <a class="contact-link" href="mailto:freyafrayer@gmail.com" aria-label="Email Freya Cao">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3z"/><path d="m3 7 9 6 9-6"/></svg>
+          <span>freyafrayer@gmail.com</span>
+        </a>
+      </div>
+    </section>
+
+    <nav class="site-nav" aria-label="Page sections">
+      <a href="#research">Research</a>
+      <a href="#misc">Misc.</a>
+    </nav>
+    <hr>
+
+    <section id="research" class="section">
+      <div class="section-heading"><h2>Research</h2><span>Robotics · Motion Planning · Embodied AI</span></div>
+
+      <article class="publication">
+        <div class="paper-visual"><img src="assets/fwik-graph.png" alt="FWIK graph-search illustration for a robot arm"></div>
+        <div class="paper-copy">
+          <a class="papertitle" href="https://arxiv.org/abs/2611.05897" target="_blank" rel="noreferrer">FWIK: Multi-Waypoint IK Selection via Lookahead Graph Search</a>
+          <p class="authors"><strong>Jinglan Cao</strong>, Guohui Zhong, Chengwei Zhang</p>
+          <p><em>arXiv preprint, 2026</em></p>
+          <p>FWIK selects inverse-kinematics solutions by considering a short window of future waypoints and screening likely self-collisions before downstream motion planning.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2611.05897" target="_blank" rel="noreferrer">arXiv</a> / <a href="https://arxiv.org/pdf/2611.05897" target="_blank" rel="noreferrer">PDF</a></p>
+        </div>
+      </article>
+
+      <div class="insights" aria-label="Research insights behind FWIK">
+        <div class="insights-heading">Insights behind FWIK</div>
+        <ol>
+          <li><strong>Short-horizon lookahead.</strong> Many manipulation tasks expose a short sequence of future goals, making limited lookahead both possible and useful.</li>
+          <li><strong>Redundancy as a resource.</strong> A manipulator’s kinematic redundancy can be spent preparing its configuration for the next action.</li>
+          <li><strong>Bounded horizons.</strong> The value of future information decays with distance, so a small window can capture much of the benefit of full-sequence optimization at lower cost.</li>
+          <li><strong>Reachability is not continuity.</strong> A nearby IK solution may still require detours, reversals, or collision-prone transitions, while a slightly farther solution can yield smoother and faster motion.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="other-publications" class="section other-publications">
+      <div class="section-heading"><h2>Other Publication</h2></div>
+      <article class="other-paper">
+        <div>
+          <a class="papertitle" href="https://doi.org/10.1109/EDUCON60312.2024.10578912" target="_blank" rel="noreferrer">Working in Progress: Reform Scheme of Project-Based Courses for Engaging Undergraduate Students in Research and Development</a>
+          <p class="authors">Chengwei Zhang, Yayu Gao, <strong>Jinglan Cao</strong>, Baixu Chen, Guohui Zhong, Xiaojun Hei, and Yang Cao</p>
+          <p><em>2024 IEEE Global Engineering Education Conference (EDUCON)</em></p>
+          <p>A co-authored report on redesigning project-based courses, process-oriented assessment, and staged defenses to engage engineering undergraduates in research and development.</p>
+          <p class="paper-links"><a href="https://doi.org/10.1109/EDUCON60312.2024.10578912" target="_blank" rel="noreferrer">DOI</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="misc" class="section misc-section">
+      <div class="section-heading"><h2>Beyond Research</h2></div>
+      <p>I love music and sing in the alto section of my choir. I also enjoy playing the guitar and badminton. In addition, I’m very interested in graphic design, and I occasionally edit videos to create vlogs. </p>
+    </section>
+
+    <footer>Last updated: November 2026 · © Jinglan Cao</footer>
+  </main>
+</body>
+</html>

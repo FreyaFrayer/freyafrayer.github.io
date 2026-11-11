@@ -21,6 +21,7 @@ body {
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+.intro-copy a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
 .site-shell { width: min(856px, calc(100% - 32px)); margin: 0 auto; }
 .intro { display: grid; grid-template-columns: 1.65fr .8fr; gap: 42px; align-items: center; padding: 34px 0 20px; }
 .intro-copy h1 { margin: 0 0 2px; text-align: center; font-family: Georgia, "Times New Roman", serif; font-size: 30px; line-height: 1.2; letter-spacing: -.02em; }
@@ -32,9 +33,14 @@ a:hover { text-decoration: underline; }
 .portrait-frame::after { content: ""; position: absolute; width: 28px; height: 28px; right: -14px; top: -14px; background: var(--yellow); border-radius: 50%; opacity: .9; }
 .portrait-frame img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
 .profile-links { display: flex; justify-content: center; gap: 18px; margin-top: 22px; font-size: 13px; }
-.contact-link { display: flex; align-items: center; justify-content: center; gap: 7px; margin-top: 19px; color: var(--accent); font-size: 12px; overflow-wrap: anywhere; }
-.contact-link svg { width: 15px; height: 15px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; stroke-linecap: round; }
-.contact-link:hover { text-decoration: underline; }
+.social-links { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 18px; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; width: 27px; height: 27px; border-radius: 5px; color: var(--accent); transition: transform .15s ease, color .15s ease; }
+.social-link img { display: block; }
+.email-icon img { width: 23px; height: auto; }
+.linkedin-icon img { width: 19px; height: 19px; }
+.email-icon { color: #EA4335; }
+.linkedin-icon { color: #0A66C2; }
+.social-link:hover { text-decoration: none; transform: translateY(-2px); }
 .site-nav { display: flex; gap: 22px; padding: 10px 0 8px; font-size: 13px; }
 .site-nav a { color: var(--ink); }
 .site-nav a:hover { color: var(--accent); }
